@@ -1,3 +1,4 @@
+/* global process */
 /**
  * Configuration schema for rate limiting across all endpoint tiers.
  * All values are configurable via environment variables with sensible defaults.

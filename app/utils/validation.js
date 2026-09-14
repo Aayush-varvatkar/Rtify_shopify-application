@@ -1,11 +1,12 @@
+/* global process */
 /**
  * Strict Input Schema Validation Utility.
  * Enforces Type, Length Bounds, and Regex Format Patterns.
  * Rejects non-conforming inputs immediately with HTTP 400 Bad Request.
  */
 
-const SHOPIFY_DOMAIN_REGEX = /^[a-zA-Z0-9][a-zA-Z0-9\-]*\.myshopify\.com$/;
-const TOPIC_REGEX = /^[a-zA-Z0-9_\-\/]{3,100}$/;
+const SHOPIFY_DOMAIN_REGEX = /^[a-zA-Z0-9][a-zA-Z0-9-]*\.myshopify\.com$/;
+const TOPIC_REGEX = /^[a-zA-Z0-9_/-]{3,100}$/;
 const BASE64_HMAC_REGEX = /^[A-Za-z0-9+/=]{32,88}$/;
 
 /**

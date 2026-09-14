@@ -1,3 +1,4 @@
+/* global process */
 import { authenticate } from "../shopify.server";
 import db from "../db.server";
 import { checkPublicRateLimit } from "../utils/rateLimiter";
